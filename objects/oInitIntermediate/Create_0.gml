@@ -1,13 +1,14 @@
-//  Scribble v4.7.4
-//  2019/07/08
+//  Scribble v4.7.1
+//  2019/05/23
 //  @jujuadams
-//  With thanks to glitchroy, Mark Turner, Rob van Saaze, DragoniteSpam, and sp202
+//  With thanks to glitchroy, Mark Turner, Rob van Saaze, and DragoniteSpam
 //  
 //  For use with GMS2.2.2 and later
 
-scribble_init_start("Fonts", "fTestA", true);
-scribble_init_add_spritefont("sSpriteFont", 3);
-scribble_init_end();
+var _spritefont_map_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.-;:_+-*/\\'\"!?~^°<>|(){[]}%&=#@$ÄÖÜäöüß";
+
+scribble_init("Fonts", "fTestA", true);
+scribble_add_spritefont("sSpriteFont", _spritefont_map_string, 0, 3);
 
 scribble_add_colour("c_coquelicot", $ff3800);
 scribble_add_colour("c_smaragdine", $50c875);
